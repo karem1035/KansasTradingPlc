@@ -1,18 +1,22 @@
 import React from "react";
 import TableImg from "../../assets/website/tableImg.png"
 import Vector from "../../assets/website/background.png"
+import HeroImg from "../../assets/website/hero-bg.jpg"
+
 
 const Hero = () => {
     const bgImage = {
-        backgroundImage: `url(${Vector})`,
+        backgroundImage: `url(${HeroImg})`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         width: "100%",
     };
     return <>
-        <div className="min-h-[550px] sm:min-h-[650px] bg-gray-300 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200" style={bgImage}>
-            <div className="container pb-8 sm:pb-0">
+        <div className="min-h-[550px] sm:min-h-[650px] flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200 relative" style={bgImage}>
+            {/* Dark overlay */}
+            <div className="absolute inset-0 bg-black opacity-0 dark:opacity-70"></div>
+            <div className="container pb-8 sm:pb-0 relative z-10">
                 <div className="grid grid-cols-1 sm:grid-cols-2">
                     {/* text content */}
                     <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1">
@@ -27,7 +31,6 @@ const Hero = () => {
                         <img src={TableImg} alt="" className="w-[300px] sm:w-[450px] sm:scale-110 m-auto spin"/>
                     </div>
                 </div>
-
             </div>
         </div>
     </>
