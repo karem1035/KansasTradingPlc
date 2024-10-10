@@ -12,8 +12,7 @@ export default {
         secondary: "#2aa6df",
       },
       boxShadow: {
-        "custom-inset":
-        "px 3px 4px rgba(0, 0, 0, 0.25), inset 2px 5px 6px rgba(255, 255, 255, 0.37), inset 0px -5px 6px rgba(0, 0, 0, 0.37)",
+        "custom-inset": "px 3px 4px rgba(0, 0, 0, 0.25), inset 2px 5px 6px rgba(255, 255, 255, 0.37), inset 0px -5px 6px rgba(0, 0, 0, 0.37)",
       },
       container: {
         center: true,

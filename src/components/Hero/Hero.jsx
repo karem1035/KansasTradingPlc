@@ -4,7 +4,7 @@ import Vector from "../../assets/website/background.png"
 import HeroImg from "../../assets/website/hero-bg.jpg"
 
 
-const Hero = () => {
+const Hero = ({ toggleLoginPopup }) => {
     const bgImage = {
         backgroundImage: `url(${HeroImg})`,
         backgroundPosition: "center",
@@ -23,7 +23,7 @@ const Hero = () => {
                         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-center">Kansas <span className="text-primary">Treding</span></h1>
                         <h1 className="text-center">"Bringing the world’s best medicines and medical equipments to your doorstep for a healthier tomorrow."</h1>
                         <div>
-                            <button className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200">ContactUs</button>
+                            <button onClick={toggleLoginPopup} className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200">ContactUs</button>
                         </div>
                     </div>
                     {/* image content */}

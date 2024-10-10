@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import {motion} from "framer-motion";
-import SignIn from "./SignIn";
+import ContactUs from "./ContactUs";
 
 
 const LoginPopup = ({ loginPopup, toggleLoginPopup }) => {
@@ -20,7 +20,7 @@ const LoginPopup = ({ loginPopup, toggleLoginPopup }) => {
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }} 
                         className="rounded-2xl bdj-white/10 backdrop-blur-md sm:w-[600px] md:w-[380px]">
-                        <SignIn />
+                        <ContactUs />
                     </motion.div>
                 </div>
             </div>

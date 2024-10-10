@@ -5,7 +5,7 @@ import AboutUs from "./components/AboutUs/AboutUs"
 import Values from "./components/Values/values"
 import Products from "./components/products/products"
 import Footer from "./components/Footer/footer"
-import LoginPopup from "./components/LoginPopup/LoginPopup"
+import ContactUsPopup from "./components/ContactUsPopup/ContactUsPopup"
 
 const App = () => {
   const [loginPopup, setLoginPopup] = React.useState(false);
@@ -17,12 +17,12 @@ const App = () => {
   return <>
     <div>
       <Navbar toggleLoginPopup={toggleLoginPopup}/>
-      <Hero/>
+      <Hero toggleLoginPopup={toggleLoginPopup}/>
       <AboutUs/>
       <Values/>
       <Products/>
       <Footer/>
-      <LoginPopup loginPopup={loginPopup} toggleLoginPopup={toggleLoginPopup}/>
+      <ContactUsPopup loginPopup={loginPopup} toggleLoginPopup={toggleLoginPopup}/>
     </div>
   </>
 };
