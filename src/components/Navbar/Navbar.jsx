@@ -21,7 +21,7 @@ const Menu = [
     }
 ]
 
-const Navbar = () => {
+const Navbar = ({ toggleLoginPopup }) => {
     return <div className="shadow-lg bg-white dark:bg-gray-900 dark:text-white duration-200">
         <div className="container py-3 sm:py-0">
             <div className="flex justify-between items-center">
@@ -45,7 +45,7 @@ const Navbar = () => {
                                 </li>
                             ))}
                     </ul>
-                    <button className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full flex items-center gap-3 hover:scale-105 duration-300">
+                    <button onClick={toggleLoginPopup} className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full flex items-center gap-3 hover:scale-105 duration-300">
                         ContactUs
                         <FaPhone className="text-xl text-white drop-shadow-sm cursor-pointer"/>
                     </button>
