@@ -21,10 +21,10 @@ const productData = [
 
 const Blogs = () => {
     return <>
-        <div className="dark:bg-black">
+        <div id="products" className="dark:bg-black">
             <div className="container w-full">
                 <div className="mb-20 shadow-lg text-center dark:bg-gray-900 dark:text-white duration-200">
-                    <h1 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-5xl sm:text-6xl lg:text-7xl max-w-full font-bold dark:text-white">Products</h1>
+                    <h1 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-4xl sm:text-5xl lg:text-6xl max-w-full font-bold dark:text-white">Products</h1>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 gap-y-8 sm:gap-4 md:gap-7">
                     {

@@ -33,7 +33,7 @@ const Values = () => {
         <div className="dark:bg-black">
             <div className="container w-full mb-10">
                 <div className="shadow-lg text-center dark:bg-gray-900 dark:text-white duration-200">
-                    <h1 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-5xl sm:text-6xl lg:text-7xl max-w-full font-bold dark:text-white">Our Statments</h1>
+                    <h1 className="text-4xl sm:text-5xl lg:text-6xl max-w-full font-bold dark:text-white">Our <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Statments</span></h1>
                 </div>
                 {/* the statement cards */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0 place-items-center">

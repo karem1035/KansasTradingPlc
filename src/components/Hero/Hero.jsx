@@ -20,7 +20,7 @@ const Hero = ({ toggleLoginPopup }) => {
                 <div className="grid grid-cols-1 sm:grid-cols-2">
                     {/* text content */}
                     <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1">
-                        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-center">Kansas <span className="text-primary">Treding</span></h1>
+                        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-center">Kansas <span className="text-primary">Trading</span></h1>
                         <h1 className="text-center">"Bringing the world’s best medicines and medical equipments to your doorstep for a healthier tomorrow."</h1>
                         <div>
                             <button onClick={toggleLoginPopup} className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200">ContactUs</button>
